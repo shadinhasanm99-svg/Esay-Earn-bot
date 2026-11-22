@@ -46,6 +46,9 @@ SQLite ডাটাবেস (tasks.db)। ব্যালান্স ফাই
    - নতুন repository বানান (যেমন: sm-shadin-tasks-bot)।
    - শুধু ২টা ফাইল আপলোড করুন: bot.py আর requirements.txt।
    - খেয়াল: bot.py ফাইলের নাম ঠিক এটাই রাখবেন।
+   - requirements.txt-এ python-telegram-bot==22.6 আছে — এটাই রাখবেন।
+     পুরনো 20.8 দিলে Render-এর Python 3.14-এ বট crash করে
+     (Updater-এর missing slot বাগ, PTB v21.0-তে ঠিক হয়েছে)।
 
 ৩. Render-এ Deploy (Free):
    - render.com → New + → Web Service → GitHub repo সিলেক্ট করুন।
